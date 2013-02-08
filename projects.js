@@ -233,6 +233,13 @@ document.addEventListener('DOMContentLoaded', function () {
 		table.appendChild(createRow(project, sites[project]));
 	}
 
+	/*
+	// @todo maybe add markdown markup - but it will be loaded from somewhere
+	var converter = new Showdown.converter();
+	$('.markdown-compiled').html(converter.makeHtml($('.markdown-source').text()));
+	*/
+
+
 	// $('.main-tabs .active a').tab('show');
 	// $('.main-tabs a').click(function (e) {
 	// 	e.preventDefault();

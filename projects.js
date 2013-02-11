@@ -1,3 +1,5 @@
+// 0.8.5 - added old shop urls
+
 var sites = {
 	"direkt\/at": {
 		"test": "http:\/\/test.teile-direkt.at"
@@ -15,8 +17,16 @@ var sites = {
 	"direkt\/en": {
 		"test": "http:\/\/en.autoteiledirekt.de"
 	},
+	"direkt\/en [old]": {
+		"test": "http:\/\/test.onlinecarparts.co.uk",
+		"prod": "http:\/\/www.onlinecarparts.co.uk"
+	},
 	"direkt\/es": {
 		"test": "http:\/\/es.autoteiledirekt.de"
+	},
+	"direkt\/es [old]": {
+		"test": "http:\/\/test.recambioscoche.es",
+		"prod": "http:\/\/www.recambioscoche.es"
 	},
 	"direkt\/fi": {
 		"test": "http:\/\/test.topautoosat.fi"
@@ -24,8 +34,16 @@ var sites = {
 	"direkt\/fr": {
 		"test": "http:\/\/fr.autoteiledirekt.de"
 	},
+	"direkt\/fr [old]": {
+		"test": "http:\/\/test.piecesauto.fr",
+		"prod": "http:\/\/www.piecesauto.fr"
+	},
 	"direkt\/it": {
 		"test": "http:\/\/it.autoteiledirekt.de"
+	},
+	"direkt\/it [old]": {
+		"test": "http:\/\/test.tuttoautoricambi.it",
+		"prod": "http:\/\/www.tuttoautoricambi.it"
 	},
 	"direkt\/nl": {
 		"test": "http:\/\/test.besteonderdelen.nl"
@@ -88,11 +106,19 @@ var sites = {
 	"pkw\/at": {
 		"test": "http:\/\/at.pkwteile.de"
 	},
+	"pkw\/at [old]": {
+		"test": "http:\/\/test.pkwteile.at",
+		"prod": "http:\/\/www.pkwteile.at"
+	},
 	"pkw\/ch": {
 		"test": "http:\/\/test.pkwteile.ch"
 	},
 	"pkw\/dk": {
 		"test": "http:\/\/dk.pkwteile.de"
+	},
+	"pkw\/de [old]": {
+		"test": "http:\/\/test.pkwteile.de",
+		"prod": "http:\/\/www.pkwteile.de"
 	},
 	"pkw\/en": {
 		"test": "http:\/\/test.buycarparts.co.uk",

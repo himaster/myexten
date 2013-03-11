@@ -1,11 +1,14 @@
 // 0.8.5 - added old shop urls
+// 0.8.6 - added direkt-at and direkt-ch production urls
 
 var sites = {
 	"direkt\/at": {
-		"test": "http:\/\/test.teile-direkt.at"
+		"test": "http:\/\/test.teile-direkt.at",
+		"prod": "http:\/\/www.teile-direkt.at"
 	},
 	"direkt\/ch": {
-		"test": "http:\/\/test.teile-direkt.ch"
+		"test": "http:\/\/test.teile-direkt.ch",
+		"prod": "http:\/\/www.teile-direkt.ch"
 	},
 	"direkt\/de": {
 		"test": "http:\/\/test.autoteiledirekt.de",

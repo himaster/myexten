@@ -1,5 +1,6 @@
 // 0.8.5 - added old shop urls
 // 0.8.6 - added direkt-at and direkt-ch production urls
+// 0.8.7 - added direkt-dk, direkt-fi, direkt-nl, direkt-no, direkt-pt, direkt-se production urls
 
 var sites = {
 	"direkt\/at": {
@@ -15,7 +16,8 @@ var sites = {
 		"prod": "http:\/\/autoteiledirekt.de"
 	},
 	"direkt\/dk": {
-		"test": "http:\/\/test.autodeleshop.dk"
+		"test": "http:\/\/test.autodeleshop.dk",
+		"prod": "http:\/\/www.autodeleshop.dk"
 	},
 	"direkt\/en": {
 		"test": "http:\/\/en.autoteiledirekt.de"
@@ -32,7 +34,8 @@ var sites = {
 		"prod": "http:\/\/www.recambioscoche.es"
 	},
 	"direkt\/fi": {
-		"test": "http:\/\/test.topautoosat.fi"
+		"test": "http:\/\/test.topautoosat.fi",
+		"prod": "http:\/\/www.topautoosat.fi"
 	},
 	"direkt\/fr": {
 		"test": "http:\/\/fr.autoteiledirekt.de"
@@ -49,16 +52,20 @@ var sites = {
 		"prod": "http:\/\/www.tuttoautoricambi.it"
 	},
 	"direkt\/nl": {
-		"test": "http:\/\/test.besteonderdelen.nl"
+		"test": "http:\/\/test.besteonderdelen.nl",
+		"prod": "http:\/\/www.besteonderdelen.nl"
 	},
 	"direkt\/no": {
-		"test": "http:\/\/test.reservedeler24.co.no"
+		"test": "http:\/\/test.reservedeler24.co.no",
+		"prod": "http:\/\/www.reservedeler24.co.no"
 	},
 	"direkt\/pt": {
-		"test": "http:\/\/test.pecasauto24.pt"
+		"test": "http:\/\/test.pecasauto24.pt",
+		"prod": "http:\/\/www.pecasauto24.pt"
 	},
 	"direkt\/se": {
-		"test": "http:\/\/test.reservdelar24.se"
+		"test": "http:\/\/test.reservdelar24.se",
+		"prod": "http:\/\/www.reservdelar24.se"
 	},
 
 	"ersatz\/at": {

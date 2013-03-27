@@ -1,6 +1,7 @@
 // 0.8.5 - added old shop urls
 // 0.8.6 - added direkt-at and direkt-ch production urls
 // 0.8.7 - added direkt-dk, direkt-fi, direkt-nl, direkt-no, direkt-pt, direkt-se production urls
+// 0.8.8 - added new test domains for pkw
 
 var sites = {
 	"direkt\/at": {
@@ -114,7 +115,7 @@ var sites = {
 	},
 
 	"pkw\/at": {
-		"test": "http:\/\/at.pkwteile.de"
+		"test": "http:\/\/new.pkwteile.at"
 	},
 	"pkw\/at [old]": {
 		"test": "http:\/\/test.pkwteile.at",
@@ -124,7 +125,10 @@ var sites = {
 		"test": "http:\/\/test.pkwteile.ch"
 	},
 	"pkw\/dk": {
-		"test": "http:\/\/dk.pkwteile.de"
+		"test": "http:\/\/test.bildeleshop.dk"
+	},
+	"pkw\/de": {
+		"test": "http:\/\/new.pkwteile.de"
 	},
 	"pkw\/de [old]": {
 		"test": "http:\/\/test.pkwteile.de",
@@ -139,7 +143,7 @@ var sites = {
 		"prod": "http:\/\/recambioscoches.es"
 	},
 	"pkw\/fi": {
-		"test": "http:\/\/fi.pkwteile.de"
+		"test": "http:\/\/test.autonvaraosat24.fi"
 	},
 	"pkw\/fr": {
 		"test": "http:\/\/test.piecesauto24.com",
@@ -150,16 +154,16 @@ var sites = {
 		"prod": "http:\/\/autoparti.it"
 	},
 	"pkw\/nl": {
-		"test": "http:\/\/nl.pkwteile.de"
+		"test": "http:\/\/test.auto-onderdelen24.nl"
 	},
 	"pkw\/no": {
-		"test": "http:\/\/no.pkwteile.de"
+		"test": "http:\/\/test.autodeler.co.no"
 	},
 	"pkw\/pt": {
-		"test": "http:\/\/pt.pkwteile.de"
+		"test": "http:\/\/test.autopecasonline24.pt"
 	},
 	"pkw\/se": {
-		"test": "http:\/\/se.pkwteile.de"
+		"test": "http:\/\/test.bildelaronline24.se"
 	},
 
 	"xxl\/at": {

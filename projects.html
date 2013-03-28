@@ -6,16 +6,18 @@
 		<style>
 			body {min-width:250px; overflow-x:hidden;}
 			.nav {margin-bottom:5px;}
+			.search-query {margin: 0 10px;}
 			#about {margin-top:0;}
 			#about p {padding:10px;}
 			.markdown-source {display:none;}
 		</style>
 		<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" type="text/css" />
 		<link rel="stylesheet" href="style.css" type="text/css" />
-		<script src="jquery.1.8.1.min.js"></script>
-		<script src="showdown.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
-		<script src="projects.js"></script>
+		<script src="./jquery.js"></script>
+		<script src="./showdown.js"></script>
+		<script src="./bootstrap/js/bootstrap.min.js"></script>
+		<script src="./projects.js"></script>
+		<script src="./search.js"></script>
 	</head>
 	<body>
 		<ul class="nav nav-tabs action-tabs">
@@ -28,13 +30,19 @@
 		</ul>
 		<div class="active-container">
 			<div id="projects">
+				<div class="search-query">
+					<div class="input-append">
+						<input class="span2" id="search" type="text" placeholder="Search">
+						<button class="btn" type="button" id="clear">Clear</button>
+					</div>
+				</div>
 				<table class="table table-striped table-hover" id="project-list"></table>
 			</div>
 		</div>
 		<div class="tabs-content" style="display:none;">
 			<div id="about">
-				<p>Автор - Слевин.</p>
-				<p>Версия 0.8.8, обновляется автоматически.</p>
+				<p>Авторы: Slevin, Ivashkin.</p>
+				<p>Версия 0.9.0, обновляется автоматически.</p>
 			</div>
 		</div>
 

@@ -2,225 +2,230 @@
 // 0.8.6 - added direkt-at and direkt-ch production urls
 // 0.8.7 - added direkt-dk, direkt-fi, direkt-nl, direkt-no, direkt-pt, direkt-se production urls
 // 0.8.8 - added new test domains for pkw
+// 0.9.0 - added search (ivashkin)
 
 var sites = {
-	"direkt\/at": {
+	"direkt\/AT": {
 		"test": "http:\/\/test.teile-direkt.at",
 		"prod": "http:\/\/www.teile-direkt.at"
 	},
-	"direkt\/ch": {
+	"direkt\/CH": {
 		"test": "http:\/\/test.teile-direkt.ch",
 		"prod": "http:\/\/www.teile-direkt.ch"
 	},
-	"direkt\/de": {
+	"direkt\/DE": {
 		"test": "http:\/\/test.autoteiledirekt.de",
 		"prod": "http:\/\/autoteiledirekt.de"
 	},
-	"direkt\/dk": {
+	"direkt\/DK": {
 		"test": "http:\/\/test.autodeleshop.dk",
 		"prod": "http:\/\/www.autodeleshop.dk"
 	},
-	"direkt\/en": {
+	"direkt\/EN": {
 		"test": "http:\/\/en.autoteiledirekt.de"
 	},
-	"direkt\/en [old]": {
+	"direkt\/EN [old]": {
 		"test": "http:\/\/test.onlinecarparts.co.uk",
 		"prod": "http:\/\/www.onlinecarparts.co.uk"
 	},
-	"direkt\/es": {
+	"direkt\/ES": {
 		"test": "http:\/\/es.autoteiledirekt.de"
 	},
-	"direkt\/es [old]": {
+	"direkt\/ES [old]": {
 		"test": "http:\/\/test.recambioscoche.es",
 		"prod": "http:\/\/www.recambioscoche.es"
 	},
-	"direkt\/fi": {
+	"direkt\/FI": {
 		"test": "http:\/\/test.topautoosat.fi",
 		"prod": "http:\/\/www.topautoosat.fi"
 	},
-	"direkt\/fr": {
+	"direkt\/FR": {
 		"test": "http:\/\/fr.autoteiledirekt.de"
 	},
-	"direkt\/fr [old]": {
+	"direkt\/FR [old]": {
 		"test": "http:\/\/test.piecesauto.fr",
 		"prod": "http:\/\/www.piecesauto.fr"
 	},
-	"direkt\/it": {
+	"direkt\/IT": {
 		"test": "http:\/\/it.autoteiledirekt.de"
 	},
-	"direkt\/it [old]": {
+	"direkt\/IT [old]": {
 		"test": "http:\/\/test.tuttoautoricambi.it",
 		"prod": "http:\/\/www.tuttoautoricambi.it"
 	},
-	"direkt\/nl": {
+	"direkt\/NL": {
 		"test": "http:\/\/test.besteonderdelen.nl",
 		"prod": "http:\/\/www.besteonderdelen.nl"
 	},
-	"direkt\/no": {
+	"direkt\/NO": {
 		"test": "http:\/\/test.reservedeler24.co.no",
 		"prod": "http:\/\/www.reservedeler24.co.no"
 	},
-	"direkt\/pt": {
+	"direkt\/PT": {
 		"test": "http:\/\/test.pecasauto24.pt",
 		"prod": "http:\/\/www.pecasauto24.pt"
 	},
-	"direkt\/se": {
+	"direkt\/SE": {
 		"test": "http:\/\/test.reservdelar24.se",
 		"prod": "http:\/\/www.reservdelar24.se"
 	},
 
-	"ersatz\/at": {
+	"ersatz\/AT": {
 		"test": "http:\/\/at.autoersatzteile.de"
 	},
-	"ersatz\/ch": {
+	"ersatz\/CH": {
 		"test": "http:\/\/ch.autoersatzteile.de"
 	},
-	"ersatz\/dk": {
+	"ersatz\/DK": {
 		"test": "http:\/\/dk.autoersatzteile.de"
 	},
-	"ersatz\/de": {
+	"ersatz\/DE": {
 		"test": "http:\/\/new.autoersatzteile.de",
 		"prod": "http:\/\/autoersatzteile.de"
 	},
-	"ersatz\/en": {
+	"ersatz\/EN": {
 		"test": "http:\/\/test.sparepartstore24.co.uk",
 		"prod": "http:\/\/sparepartstore24.co.uk"
 	},
-	"ersatz\/es": {
+	"ersatz\/ES": {
 		"test": "http:\/\/test.repuestoscoches24.es",
 		"prod": "http:\/\/repuestoscoches24.es"
 	},
-	"ersatz\/it": {
-		"test": "http:\/\/test.pezzidiricambio24.it",
-		"prod": "http:\/\/pezzidiricambio24.it"
-	},
-	"ersatz\/fi": {
+	"ersatz\/FI": {
 		"test": "http:\/\/fi.autoersatzteile.de"
 	},
-	"ersatz\/fr": {
+	"ersatz\/FR": {
 		"test": "http:\/\/test.piecesdiscount24.fr",
 		"prod": "http:\/\/piecesdiscount24.fr"
 	},
-	"ersatz\/nl": {
+	"ersatz\/IT": {
+		"test": "http:\/\/test.pezzidiricambio24.it",
+		"prod": "http:\/\/pezzidiricambio24.it"
+	},
+	"ersatz\/NL": {
 		"test": "http:\/\/nl.autoersatzteile.de"
 	},
-	"ersatz\/no": {
+	"ersatz\/NO": {
 		"test": "http:\/\/no.autoersatzteile.de"
 	},
-	"ersatz\/pt": {
+	"ersatz\/PT": {
 		"test": "http:\/\/pt.autoersatzteile.de"
 	},
-	"ersatz\/se": {
+	"ersatz\/SE": {
 		"test": "http:\/\/se.autoersatzteile.de"
 	},
 
-	"pkw\/at": {
+	"pkw\/AT": {
 		"test": "http:\/\/new.pkwteile.at"
 	},
-	"pkw\/at [old]": {
+	"pkw\/AT [old]": {
 		"test": "http:\/\/test.pkwteile.at",
 		"prod": "http:\/\/www.pkwteile.at"
 	},
-	"pkw\/ch": {
+	"pkw\/CH": {
 		"test": "http:\/\/test.pkwteile.ch"
 	},
-	"pkw\/dk": {
+	"pkw\/DK": {
 		"test": "http:\/\/test.bildeleshop.dk"
 	},
-	"pkw\/de": {
+	"pkw\/DE": {
 		"test": "http:\/\/new.pkwteile.de"
 	},
-	"pkw\/de [old]": {
+	"pkw\/DE [old]": {
 		"test": "http:\/\/test.pkwteile.de",
 		"prod": "http:\/\/www.pkwteile.de"
 	},
-	"pkw\/en": {
+	"pkw\/EN": {
 		"test": "http:\/\/test.buycarparts.co.uk",
 		"prod": "http:\/\/buycarparts.co.uk"
 	},
-	"pkw\/es": {
+	"pkw\/ES": {
 		"test": "http:\/\/test.recambioscoches.es",
 		"prod": "http:\/\/recambioscoches.es"
 	},
-	"pkw\/fi": {
+	"pkw\/FI": {
 		"test": "http:\/\/test.autonvaraosat24.fi"
 	},
-	"pkw\/fr": {
+	"pkw\/FR": {
 		"test": "http:\/\/test.piecesauto24.com",
 		"prod": "http:\/\/piecesauto24.com"
 	},
-	"pkw\/it": {
+	"pkw\/IT": {
 		"test": "http:\/\/test.autoparti.it",
 		"prod": "http:\/\/autoparti.it"
 	},
-	"pkw\/nl": {
+	"pkw\/NL": {
 		"test": "http:\/\/test.auto-onderdelen24.nl"
 	},
-	"pkw\/no": {
+	"pkw\/NO": {
 		"test": "http:\/\/test.autodeler.co.no"
 	},
-	"pkw\/pt": {
+	"pkw\/PT": {
 		"test": "http:\/\/test.autopecasonline24.pt"
 	},
-	"pkw\/se": {
+	"pkw\/SE": {
 		"test": "http:\/\/test.bildelaronline24.se"
 	},
 
-	"xxl\/at": {
+	"xxl\/AT": {
 		"test": "http:\/\/test.autoteilexxl.at"
 	},
-	"xxl\/ch": {
+	"xxl\/CH": {
 		"test": "http:\/\/test.autoteilexxl.ch"
 	},
-	"xxl\/de": {
+	"xxl\/DE": {
 		"test": "http:\/\/test.autoteilexxl.de",
 		"prod": "http:\/\/autoteilexxl.de"
 	},
-	"xxl\/dk": {
+	"xxl\/DK": {
 		"test": "http:\/\/dk.autoteilexxl.de"
 	},
-	"xxl\/en": {
+	"xxl\/EN": {
 		"test": "http:\/\/test.bestpartstore.co.uk",
 		"prod": "http:\/\/bestpartstore.co.uk"
 	},
-	"xxl\/es": {
+	"xxl\/ES": {
 		"test": "http:\/\/test.repuestosauto.es",
 		"prod": "http:\/\/repuestosauto.es"
 	},
-	"xxl\/fi": {
+	"xxl\/FI": {
 		"test": "http:\/\/fi.autoteilexxl.de"
 	},
-	"xxl\/fr": {
+	"xxl\/FR": {
 		"test": "http:\/\/test.24piecesauto.fr",
 		"prod": "http:\/\/24piecesauto.fr"
 	},
-	"xxl\/it": {
+	"xxl\/IT": {
 		"test": "http:\/\/test.tuttiautopezzi.it",
 		"prod": "http:\/\/tuttiautopezzi.it"
 	},
-	"xxl\/nl": {
+	"xxl\/NL": {
 		"test": "http:\/\/nl.autoteilexxl.de"
 	},
-	"xxl\/no": {
+	"xxl\/NO": {
 		"test": "http:\/\/no.autoteilexxl.de"
 	},
-	"xxl\/pt": {
+	"xxl\/PT": {
 		"test": "http:\/\/pt.autoteilexxl.de"
 	},
-	"xxl\/se": {
+	"xxl\/SE": {
 		"test": "http:\/\/se.autoteilexxl.de"
 	}
 };
 
-document.addEventListener('DOMContentLoaded', function () {
-	var table = document.getElementById('project-list');
+document.addEventListener("DOMContentLoaded", function () {
+	var table = document.getElementById("project-list");
 
 	function createRow(project, projectSites) {
+		var projectData = project.split("/");
+		var skin = projectData[0];
+		var lang = projectData[1];
+
 		var createLink = function (title, url) {
-			var link = document.createElement('a');
-			link.setAttribute('href', url);
+			var link = document.createElement("a");
+			link.setAttribute("href", url);
 			link.appendChild(document.createTextNode(title));
-			link.addEventListener('click', function () {
+			link.addEventListener("click", function () {
 				var newTab = {
 					url : url
 				};
@@ -232,34 +237,37 @@ document.addEventListener('DOMContentLoaded', function () {
 		};
 
 		var addEmptyLink = function(links) {
-			var emElement = document.createElement('em');
-			var textNode = document.createTextNode('None');
+			var emElement = document.createElement("em");
+			var textNode = document.createTextNode("None");
 			emElement.appendChild(textNode);
 			links.push(emElement);
 		};
 
-		var row = document.createElement('tr');
-		var projectCell = document.createElement('td');
-		var projectTitle = document.createElement('span');
+		var row = document.createElement("tr");
+		var projectCell = document.createElement("td");
+		var projectTitle = document.createElement("span");
+		row.setAttribute("data-skin",skin);
+		row.setAttribute("data-lang",lang);
+
 		projectTitle.appendChild(document.createTextNode(project));
 		projectCell.appendChild(projectTitle);
 		row.appendChild(projectCell);
 
-		var environmentalCell = document.createElement('td');
-		var links = [document.createTextNode('(')];
+		var environmentalCell = document.createElement("td");
+		var links = [document.createTextNode("(")];
 		if ((typeof projectSites.test) !== "undefined") {
 			links.push(createLink("Test", projectSites.test));
 		} else {
 			addEmptyLink(links);
 		}
-		links.push(document.createTextNode('\u00A0/\u00A0'));
+		links.push(document.createTextNode("\u00A0/\u00A0"));
 
 		if ((typeof projectSites.prod) !== "undefined") {
 			links.push(createLink("Production", projectSites.prod));
 		} else {
 			addEmptyLink(links);
 		}
-		links.push(document.createTextNode(')'));
+		links.push(document.createTextNode(")"));
 
 		for (var i = 0; i < links.length; i++) {
 			environmentalCell.appendChild(links[i]);
@@ -276,23 +284,23 @@ document.addEventListener('DOMContentLoaded', function () {
 	/*
 	// @todo maybe add markdown markup - but it will be loaded from somewhere
 	var converter = new Showdown.converter();
-	$('.markdown-compiled').html(converter.makeHtml($('.markdown-source').text()));
+	$(".markdown-compiled").html(converter.makeHtml($(".markdown-source").text()));
 	*/
 
 
-	// $('.main-tabs .active a').tab('show');
-	// $('.main-tabs a').click(function (e) {
+	// $(".main-tabs .active a").tab("show");
+	// $(".main-tabs a").click(function (e) {
 	// 	e.preventDefault();
-	// 	$(this).tab('show');
+	// 	$(this).tab("show");
 	// });
 
-	$('.action-tabs a[data-toggle="tab"]').on('shown', function (e) {
+	$(".action-tabs a[data-toggle=\"tab\"]").on("shown", function (e) {
 		var closedTab		= $(e.relatedTarget);
 		var selectedTab		= $(e.target);
-		var closedClass		= '#' + closedTab.data('content-id');
-		var selectedClass	= '#' + selectedTab.data('content-id');
+		var closedClass		= "#" + closedTab.data("content-id");
+		var selectedClass	= "#" + selectedTab.data("content-id");
 		$(selectedClass).insertAfter(closedClass).show();
-		$(closedClass).appendTo('.tabs-content').hide();
+		$(closedClass).appendTo(".tabs-content").hide();
 	});
 
 });

@@ -1,18 +1,22 @@
 {
 	"manifest_version": 2,
 
-	"name": "PKW Project Selector (beta)",
+	"name": "PKW Project Selector",
 	"description": "Select one of the PKW sites you want to go to.",
-	"version": "0.9.0",
+	"version": "1.0.0",
+
+	"minimum_chrome_version": "22",
 
 	"permissions" : [
-		"tabs"
+		"tabs",
+		"storage",
+		"http://test.piecesauto24.com/crx-selector-api/*"
 	],
 
 	"update_url" : "https://dl.dropbox.com/u/9059467/chrome-ext/pkw-project-selector/updates.xml",
 
 	"browser_action": {
 		"default_icon": "favicon.ico",
-		"default_popup": "projects.html"
+		"default_popup": "project.html"
 	}
 }

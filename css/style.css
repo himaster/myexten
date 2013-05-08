@@ -169,3 +169,4 @@
 	.server-deployment .loading {margin:10px 0; text-align:center;}
 	.servers-table.table th, .servers-table.table td {padding:0 0 0 8px;}
 	.servers-table .environment {background-color:#d9edf7; font-weight:bold; text-align:center;}
+	.server-totals-visists {background-color:#dff0d8}

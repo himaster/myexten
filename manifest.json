@@ -3,14 +3,14 @@
 
 	"name": "PKW Project Selector",
 	"description": "Select one of the PKW sites you want to go to.",
-	"version": "1.1.4",
+	"version": "1.1.5",
 
 	"minimum_chrome_version": "22",
 
 	"permissions" : [
 		"tabs",
 		"storage",
-		"http://test.piecesauto24.com/crx-selector-api/*"
+		"http://aws.pkwteile.de/ce/*"
 	],
 
 	"update_url" : "https://dl.dropbox.com/u/9059467/chrome-ext/pkw-project-selector/updates.xml",

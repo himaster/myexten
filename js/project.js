@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	// http://stackoverflow.com/questions/7573191/can-i-access-a-property-from-my-manifest-json-in-my-extensions-javascript-files
 
 	$.get(
-		"http://test.piecesauto24.com/crx-selector-api/index.php?/listSites",
+		"http://aws.pkwteile.de/ce/listSites",
 		{},
 		function (sitesHtml) {
 			$(".sites-list").html(sitesHtml);
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	);
 
 	$.get(
-		"http://test.piecesauto24.com/crx-selector-api/index.php?/listServers",
+		"http://aws.pkwteile.de/ce/listServers",
 		{},
 		function (serversHtml) {
 			$(".server-deployment").html(serversHtml);

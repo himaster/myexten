@@ -13,7 +13,7 @@
 		"http://aws.pkwteile.de/ce/*"
 	],
 
-	"update_url" : "https://dl.dropbox.com/u/9059467/chrome-ext/pkw-project-selector/updates.xml",
+	"update_url" : "http://aws.pkwteile.de/crx/update.xml",
 
 	"browser_action": {
 		"default_icon": "favicon.ico",

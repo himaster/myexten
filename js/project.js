@@ -25,10 +25,20 @@ document.addEventListener("DOMContentLoaded", function () {
 				$("#sites li a[data-skin=\"" + selectedSkin + "\"]").click();
 			}
 
-			$(".site-url").click(function (e) {
-				e.preventDefault();
-				chrome.tabs.create({url : $(this).attr('href')});
-			});
+            $(".site-url").click(function (e) {
+                e.preventDefault();
+                if (e.altKey) {
+                    var ind = $(this).parents('td').index();
+                    $(this).parents('table').find('tr').each(function(){
+                        var link = $(this).find('td:eq('+ind+') a').attr('href');
+                        chrome.tabs.create({url : link});
+                    });
+
+                } else {
+                    chrome.tabs.create({url : $(this).attr('href')});
+                }
+            });
+
 			$("#sites li a").on("click", function () {
 				localStorage.setItem(unifyStorageKey("skin"), $(this).data("skin"));
 			});
@@ -42,4 +52,5 @@ document.addEventListener("DOMContentLoaded", function () {
 			$(".server-deployment").html(serversHtml);
 		}
 	);
+
 });

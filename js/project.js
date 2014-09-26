@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     var ind = $(this).parents('td').index();
                     $(this).parents('table').find('tr').each(function(){
                         var link = $(this).find('td:eq('+ind+') a').attr('href');
-                        chrome.tabs.create({url : link});
+                        if (link != '#') chrome.tabs.create({url : link});
                     });
 
                 } else {

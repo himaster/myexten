@@ -1,14 +1,10 @@
-// workaround for local tests
-if (chrome.runtime === undefined) {
-	chrome.runtime = {getManifest : function () { return {version : 'local-dev'}; }};
-}
 
 document.addEventListener("DOMContentLoaded", function () {
 	function unifyStorageKey(key) {
 		return "pkw-selector." + key;
 	}
 
-	$(".crx-version").text(chrome.runtime.getManifest().version);
+	
 	// https://developer.chrome.com/extensions/storage.html#method-StorageArea-get
 	// http://developer.chrome.com/extensions/manifest.html
 	// http://developer.chrome.com/extensions/manifestVersion.html
@@ -25,19 +21,19 @@ document.addEventListener("DOMContentLoaded", function () {
 				$("#sites li a[data-skin=\"" + selectedSkin + "\"]").click();
 			}
 
-            $(".site-url").click(function (e) {
-                e.preventDefault();
-                if (e.altKey) {
-                    var ind = $(this).parents('td').index();
-                    $(this).parents('table').find('tr').each(function(){
-                        var link = $(this).find('td:eq('+ind+') a').attr('href');
-                        if (link != '#') chrome.tabs.create({url : link});
-                    });
-
-                } else {
-                    chrome.tabs.create({url : $(this).attr('href')});
-                }
-            });
+            // $(".site-url").click(function (e) {
+                // e.preventDefault();
+                // if (e.altKey) {
+                    // var ind = $(this).parents('td').index();
+                    // $(this).parents('table').find('tr').each(function(){
+                        // var link = $(this).find('td:eq('+ind+') a').attr('href');
+                        // 
+                    // });
+// 
+                // } else {
+                    // 
+                // }
+            // });
 
 			$("#sites li a").on("click", function () {
 				localStorage.setItem(unifyStorageKey("skin"), $(this).data("skin"));

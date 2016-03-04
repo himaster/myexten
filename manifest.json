@@ -10,7 +10,7 @@
 	"permissions" : [
 		"tabs",
 		"storage",
-		"http://aws.pkwteile.de/ce/*"
+		"http://*/"
 	],
 
 	"update_url" : "http://aws.pkwteile.de/crx/update.xml",
